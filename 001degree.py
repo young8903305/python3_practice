@@ -5,7 +5,7 @@ Celsius & Fahrenheit transform
 """
 
 while 1:
-    CF = input('Celsius or Fahrenheit?(C/F)')
+    CF = input('Celsius or Fahrenheit?(C/F) ')
     if (CF!='F') and (CF!='C'):
         print('please input C/F')
         continue
