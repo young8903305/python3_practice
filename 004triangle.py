@@ -17,7 +17,9 @@ while 1:
                 s = (a + b + c) / 2
                 area = math.sqrt(s * (s - a) * (s - b) * (s - c))
                 print('area: %.2f' % (area))
+        elif a == 0 or b == 0 or c == 0:
+            print('do not insert 0')
         else:
-            print('please insert positive number')
+            print('insert positive number')
     else:
         print('please insert \"just\" 3 number')
