@@ -9,13 +9,13 @@ a multiple table of 9x9
         .
 """
 
-b=1
 a=1
-while a<=9:
-    print('%d*%d=%d\t' % (b, a, b*a), end='')
-    if b<9:
-        b+=1
+b=1
+while b<=9:
+    print('%d*%d=%d\t' % (a, b, a*b), end='')
+    if a<9:
+        a+=1
     else:
         print()
-        b=1
-        a+=1
+        a=1
+        b+=1
