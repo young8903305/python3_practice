@@ -8,3 +8,16 @@ a multiple table of 9x9
         .
         .
 """
+
+def multiple(a, b):
+    if b<=9:
+        if a<=9:
+            print('%d*%d=%d\t' % (a, b, a*b), end='')
+            multiple(a+1, b)
+        else:
+            print()
+            a=1
+            b+=1
+            multiple(a, b)
+
+multiple(1, 1)
