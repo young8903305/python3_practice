@@ -9,6 +9,7 @@ def fib(n):
         return 1
     else:
         return fib(n-1) + fib(n-2)
-
+        
+# turn input string into integer
 n = int(input('input a number n, and calculate the Fibonacci sequence of fib(n):'))
 print(fib(n))
