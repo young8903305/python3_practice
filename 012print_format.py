@@ -1,4 +1,5 @@
 """
+use four different way to concate string, then print them out.
 """
 
 first_name = 'Zeth'
