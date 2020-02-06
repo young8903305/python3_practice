@@ -3,7 +3,7 @@ datetime object, strptime() example
 """
 from datetime import datetime, timedelta
 
-# the now function returns a datetime object
+# now() returns a datetime object of now
 current_date = datetime.now()
 print('Today is: ' + str(current_date))
 
@@ -13,10 +13,6 @@ today = current_date
 yesterday = today - one_day
 print('Yesterday was: ' + str(yesterday))
 
-#
-print('Day: ' + str(current_date.day))
-print('Month: ' + str(current_date.month))
-print('Year: ' + str(current_date.year))
 
 # receive the date as a string and need to convert it to a datetime object
 # use strptime function
