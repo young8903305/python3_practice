@@ -8,30 +8,30 @@ def try_finally():
 def try_except():
     num_list = [2, 3, 0]
     try:
-        print('This is a try-exception statement')
+        print('This is a try-except statement')
         for num in num_list:
             print(f'6/{num} = {int(6/num)}')
     except ZeroDivisionError:
-        print('Oops! <Class \'ZeroDivisionError\'> occured. you divide 0')
+        print('Oops! <Class \'ZeroDivisionError\'> occurred. you divide 0')
 
 def try_except_finally():
     num_list = [2, 3, 0]
     try:
-        print('This is a try-exception statement')
+        print('This is a try-except-finally statement')
         for num in num_list:
             print(f'6/{num} = {int(6/num)}')
     except ZeroDivisionError:
-        print('Oops! <Class \'ZeroDivisionError\'> occured. you divide 0')
+        print('Oops! <Class \'ZeroDivisionError\'> occurred. you divide 0')
     finally:
-        print('This is finally statement.')
+        print('This is the finally statement.')
 
 # Exceptions are raised when corresponding errors occur at run time, but we can forcefully raise it using the keyword raise.
 # We can also optionally pass in value to the exception to clarify why that exception was raised.
 def try_raise_except():
     try:
-        positive_num = int(input("Enter a positive integer: "))
+        positive_num = int(input('Enter a positive integer: '))
         if positive_num <= 0:
-            raise ValueError("That is not a positive number!")
+            raise ValueError('That is not a positive number!')
     except ValueError as ve:
         print(ve)
 
