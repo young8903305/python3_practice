@@ -10,6 +10,7 @@ def get_initial(input_name, force_uppercase=True):
     return initial
 
 # Ask for someone's first name and return the initials
+# choose force_uppercase parameter, and the other parameter most need to specified.
 first_name = input('Enter your first name: ')
 first_initial = get_initial(force_uppercase=False, input_name=first_name)
 
