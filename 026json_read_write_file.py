@@ -12,12 +12,14 @@ person_data = {
     ]
 }
 
+write_file_path = './026json_write_out.json'
 # here we create new data_file.json file with write mode using file i/o operation
-with open('./json_file2.json', "w") as file_write:
+with open(write_file_path, "w") as file_write:
     # write json data into file
     json.dump(person_data, file_write)
 
-with open('./json_file.json') as file_object:
+read_file_path = './026json_read_in.json'
+with open(read_file_path) as file_object:
     # store file data in object
     data = json.load(file_object)
     print(data)
