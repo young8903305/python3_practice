@@ -19,9 +19,11 @@ def decode_complex(dct):
         return complex(dct["real"], dct["imag"])
     return dct
 
+# serialize a complex obj to JSON string
 json_string = json.dumps(2 + 5j, cls=ComplexEncoder)
 print(json_string)
 
+# deserialize JSON string to complex obj
 file_path = './027example_data_00.json'
 with open(file_path) as complex_data:
     data = complex_data.read()
