@@ -11,7 +11,7 @@ class Solution:
         while x != 0:
             remain = x % 10
             result = result * 10 + remain
-            x = x // 10
+            x = x // 10    # divide without decimal
         
         
         if result != in_x:
