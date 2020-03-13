@@ -4,6 +4,7 @@ class ListNode:
         self.val = x
         self.next = None
 
+# prevent from stack overflow, use while loop, not recursive
 class Solution:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         
